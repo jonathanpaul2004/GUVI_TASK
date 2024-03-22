@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="./css_component/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="register.js"></script>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form id="registrationForm" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br>
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age"><br>
+  <label for="contact">Contact:</label><br>
+  <input type="tel" id="contact" name="contact"><br>
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob"><br><br>
+  <input type="submit" value="Register">
+</form>
+<div id="message"></div>
+</body>
+</html>
